@@ -4,6 +4,8 @@ public class HomeWorkApp {
 
         printThreeWords();
         checkSumSign();
+        printColor();
+        compareNumbers();
     }
 
     public static void printThreeWords() {
@@ -14,7 +16,7 @@ public class HomeWorkApp {
 
     public static void checkSumSign() {
         int a = 12;
-        int b = 15;
+        int b = -15;
         if (a + b >= 0) {
             System.out.println("Сумма положительная");
         }
@@ -25,10 +27,28 @@ public class HomeWorkApp {
     }
 
     public static void printColor() {
+        int value = 11;
+        if (value <= 0) {
+            System.out.println("Красный");
+        }
+        if (value >= 0 && value <= 100) {
+            System.out.println("Желтый");
+        }
+        if (value > 100) {
+            System.out.println("Зеленый");
+        }
 
     }
 
     public static void compareNumbers() {
+        int a = 100;
+        int b = 101;
+        if (a >= b) {
+            System.out.println("a >= b");
+        }
+        else {
+            System.out.println("a < b");
+        }
 
     }
 }
